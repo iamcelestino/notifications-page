@@ -1,0 +1,108 @@
+
+
+:root {
+    --primary-Red: hsl(1, 90%, 64%);
+    --primary-Blue: hsl(219, 85%, 26%);
+
+    --neutral-White: hsl(0, 0%, 100%)
+    --neutral-Very-light-grayish-blue hsl(210, 60%, 98%);
+    --neutral-Light-grayish-blue1: hsl(211, 68%, 94%);
+    --neutalLight-grayish-blue2: hsl(205, 33%, 90%);
+    --meutal-Grayish-blue: hsl(219, 14%, 63%);
+    --meutral-Dark-grayish-blue: hsl(219, 12%, 42%);
+    --neutral-Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: var(--neutral-Light-grayish-blue1);
+}
+
+.wrapper {
+    width: 90%;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 20px;
+}
+
+.header {
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+header p:hover {
+    color: var(--primary-Blue);
+    cursor: pointer;
+}
+
+.notification {
+   background-color: var(--neutalLight-grayish-blue2);
+   padding: 1rem;
+   border-radius: 10px;
+}
+
+.notification, .header{
+    display: flex;
+    align-items: center;
+}
+
+.notification + .notification {
+    margin-top: 0.6rem;
+}
+
+.number__of__notifications {
+    background-color: var(--primary-Blue);
+    color: #fff;
+    padding: 0.1rem 0.4rem;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+}
+
+.notification__description {
+    margin-left: 1rem;
+}
+
+.author {
+    font-weight: 900;
+}
+
+.author {
+    font-weight: 900;
+}
+
+.time {
+    margin: 0.8rem 0;
+}
+
+.author:hover {
+    color: var(--primary-Blue);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
