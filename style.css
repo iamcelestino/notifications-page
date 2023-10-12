@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
 :root {
     --primary-Red: hsl(1, 90%, 64%);
@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     min-height: 100dvh;
     background-color: var(--neutral-Light-grayish-blue1);
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .wrapper {
