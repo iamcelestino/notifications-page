@@ -13,16 +13,16 @@ function countReadNotification(count) {
     countOpenNotification.textContent = count;
 }
 
-let count = 0
+let count = 7
 allMessageMarker.addEventListener("click", () => {
-    count = 7;
+    count = 0;
     countReadNotification(count);
     allNotifactionRead()
 });
 
 notifications.forEach(notification => {
     notification.addEventListener("click", () => {
-        count += 1
+        count--;
         countReadNotification(count)
         const marker = notification.childNodes[3].childNodes[1].firstChild.nextSibling.childNodes[2];
         notification.classList.add("change__color");
