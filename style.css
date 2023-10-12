@@ -29,7 +29,8 @@ body {
 }
 
 .wrapper {
-    width: 90%;
+    width: 95%;
+    max-width: 900px;
     background-color: #fff;
     padding: 1.5rem;
     margin: 1rem auto;
@@ -45,15 +46,26 @@ img {
     max-width: 100%;
 }
 
-header p:hover {
-    color: var(--primary-Blue);
-    cursor: pointer;
+.time, 
+.all__message__marker {
+    color: var(--meutal-Grayish-blue);
+}
+
+.all__message__marker:hover {
+    color: var(--primary-Blue); 
+    cursor: pointer;      
 }
 
 .notification {
    background-color: var(--neutalLight-grayish-blue2);
    padding: 1rem;
    border-radius: 10px;
+   border: 1px solid var(--neutalLight-grayish-blue2);
+}
+
+
+.change__color {
+    background-color: var(--neutral-Very-light-grayish-blue);
 }
 
 .notification, .header{
@@ -79,19 +91,39 @@ header p:hover {
 
 .author {
     font-weight: 900;
-}
-
-.author {
-    font-weight: 900;
+    margin-right: 0.3rem;
 }
 
 .time {
-    margin: 0.8rem 0;
+    margin: 1rem 0;
 }
 
 .author:hover {
     color: var(--primary-Blue);
     cursor: pointer;
+}
+
+.comment {
+    margin: 0.4rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--neutalLight-grayish-blue2);
+}
+
+.comment p {
+    max-width: 300px;
+}
+
+.show {
+    display: none;
+}
+
+.marker {
+    background-color: var(--primary-Red);
+    font-size: 9px;
+    margin: 0.25rem;
+    padding: 1px 6px;
+    border-radius: 50px;
 }
 
 
