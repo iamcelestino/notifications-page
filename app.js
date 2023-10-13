@@ -17,18 +17,20 @@ let count = 7
 allMessageMarker.addEventListener("click", () => {
     count = 0;
     countReadNotification(count);
-    allNotifactionRead()
+    allNotifactionRead();
 });
 
 notifications.forEach(notification => {
     notification.addEventListener("click", () => {
-        count--;
-        countReadNotification(count)
         const marker = notification.childNodes[3].childNodes[1].firstChild.nextSibling.childNodes[2];
+    if(marker.classList.contains("marker"))
+        count--;
+        countReadNotification(count);
         notification.classList.add("change__color");
         marker.classList.remove("marker");
-    })
-});
+    });
+})
+
 
 notifications[3].addEventListener("click", () => {
     comment.classList.toggle("show");

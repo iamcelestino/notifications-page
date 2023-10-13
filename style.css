@@ -58,7 +58,7 @@ img {
 }
 
 .notification {
-   background-color: var(--neutalLight-grayish-blue2);
+   background-color: var(--neutral-Light-grayish-blue1);
    padding: 1rem;
    border-radius: 10px;
    border: 1px solid var(--neutalLight-grayish-blue2);
